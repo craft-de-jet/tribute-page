@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="4MLwZcZHx6WkLZYLtFcm/AQ/W12JoCtG4M0BrT5zuQy41wdvbYvWXE8+bK7VTncZeyXa9e97B0T/YrMNMiZU5A==" />
+<title>CodePen Login</title>
+<link href="https://fonts.googleapis.com/css?family=Lato:300,400,400italic,700,700italic,900,900italic" rel="stylesheet" />
+<link rel="stylesheet" media="all" href="https://static.codepen.io/assets/global/global-88e23e28dcf2e140c0f59458e112cbdede91289a3d5a8aa1c991bf2fd1b759ee.css" />
+<link rel="stylesheet" media="screen" href="https://static.codepen.io/assets/packs/css/everypage-cce3091a.css" />
+<link rel="stylesheet" media="all" href="https://static.codepen.io/assets/page/page-70aadc20a7ffd71654619af505e753acda882b1843633107a455a4786dacf3cd.css" />
+<link rel="stylesheet" media="screen" href="https://static.codepen.io/assets/accounts/signup-29f47f26965fee930393dad4af631621ac1fd8ada22c1dc9a7e90ac1d20372d5.css" />
+<link rel="stylesheet" media="screen" href="https://static.codepen.io/assets/accounts/form-62464dc23571af11f63e1e830c53af671518aecadd257fb643e2ce1803c8e7f8.css" />
+<link rel="apple-touch-icon" type="image/png" href="https://static.codepen.io/assets/favicon/apple-touch-icon-5ae1a0698dcc2402e9712f7d01ed509a57814f994c660df9f7a952f3060705ee.png" />
+<meta name="apple-mobile-web-app-title" content="CodePen">
+<link rel="shortcut icon" type="image/x-icon" href="https://static.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico" />
+<link rel="mask-icon" type="" href="https://static.codepen.io/assets/favicon/logo-pin-8f3771b1072e3c38bd662872f6b673a722f4b3ca2421637d5596661b4e2132cc.svg" color="#111" />
+<meta name="monetization" content="$ilp.uphold.com/biyqg2MkQKbe">
+<script>/* Firefox needs this to prevent FOUC. */</script>
+</head>
+<body class="body-login
+    logged-out
+
+
+    not-team
+">
+<header id="main-sidebar" class="main-sidebar">
+</header>
+<div id="react-search-and-user-menu"></div>
+<div class="login-wrap">
+<header class="login-header">
+<h1 class="login-logo">CodePen Login</h1>
+<h2 class="little-big-header">Log In!</h2>
+</header>
+<div class="flex-grid">
+<div class="login-half left">
+<div class="login-area">
+<div class="login-error-message">
+Please login to continue.
+</div>
+<form class="login-form top-label-form" id="login-login-form" action="billing.html" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="6Igb2YwNhEbYN0jAJ1LPtu0IRXGkj0miOieZhUNXQOqcIC3zKRRfFvYxNWQvV6IFa6DysqqjCSjP7XjxdDj7RQ==" />
+<div id="login-email" class="field">
+<label for="login-email-field">Username or Email</label>
+<input type="text" name="email" id="login-email-field" value="" required="required" />
+</div>
+<div id="login-password" class="field">
+<label for="login-password-field">Password</label>
+<input name="password" required="required" type="password" id="login-password-field_" />
+</div>
+<div>
+<input type="hidden" id="login-type" name="login-type" value="fullpage">
+</div>
+<div id="login-error"></div>
+<div>
+<button id="log-in-button" class="recaptcha-trigger-button button green action-button expand-right">
+<span class="label">Log In</span>
+<span class="spinner"></span>
+</button>
+&nbsp;&nbsp;
+<a href="billing.html#" id="forgot-password-link" class="forgot-password-link">
+Forgot Password?
+</a>
+</div>
+</form>
+<form class="module login-form top-label-form" id="forgot-password-form" action="billing.html#0">
+<h3>Reset Your Password</h3>
+<div class="field">
+<label for="forgot-email">Username Or Email</label>
+<input type="text" id="forgot-email" name="forgot-email" placeholder="your@email.com" required>
+</div>
+<div class="field">
+<input id="forgot-email-btn" type="submit" value="Send Password Reset Email" class="button button-medium">
+</div>
+<div id="sent-message">
+<div id="sent-message-message"></div>
+</div>
+</form>
+</div>
+</div>
+<div class="login-divider">
+<div class="bar bar-top"></div>
+<span class="login-or">OR</span>
+<div class="bar bar-bottom"></div>
+</div>
+<div class="login-half right">
+<div class="module social-auth-errors" id="login-social-auth-errors"></div>
+<div class="login-social-buttons">
+<a id="login-with-twitter" href="../auth/twitter.html" data-network="Twitter" class="button social-account-button twitter-button button-fullwidth">
+<svg class="icon-twitter" width="26" height="26">
+<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/svg_sprite?v=bbd832a9#twitter"></use>
+</svg>
+<span>Log In with Twitter</span>
+</a>
+<a id="login-with-github" href="../auth/github.html" data-network="Github" class="button github-button social-account-button button-fullwidth">
+<svg class="icon-github" width="26" height="26">
+<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/svg_sprite?v=bbd832a9#octocat"></use>
+</svg>
+<span>Log In with GitHub</span>
+</a>
+<a id="login-with-facebook" href="../auth/facebook.html" data-network="Facebook" class="button social-account-button facebook-button button-fullwidth">
+<svg class="icon-facebook" width="26" height="26">
+<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/svg_sprite?v=bbd832a9#facebook"></use>
+</svg>
+<span>Log In with Facebook</span>
+</a>
+</div>
+</div>
+</div>
+<div class="signup-callout">
+Need an account? <a href="../accounts/signup/user/free.html">Sign up now!</a>
+</div>
+</div>
+<div id="popup-overlay" class="overlay popup-overlay"></div>
+<div id="modal-overlay" class="overlay modal-overlay"></div>
+<noscript>
+
+  <input type="checkbox" class="modal-closing-trick" id="modal-closing-trick">
+
+  <div class="overlay noscript-overlay" style="display: block;"></div>
+
+  <div class="modal modal-message group modal-warning">
+
+    <div class="modal-title">CodePen doesn't work very well without JavaScript.</div>
+
+    <p>We're all for progressive enhancement, but CodePen is a bit unique in that it's all about writing and showing front end code, including JavaScript. It's required to use most of the features of CodePen.</p>
+
+    <p>Need to know how to enable it? <a href="http://enable-javascript.com/" target="_blank" rel="noopener">Go here.</a></p>
+
+    <label class="button button-medium" for="modal-closing-trick">Close this, use anyway.</label>
+
+  </div>
+
+</noscript>
+<input type="hidden" id="init-data" value="{&quot;__browser&quot;:{&quot;device&quot;:&quot;unknown&quot;,&quot;mobile&quot;:null,&quot;name&quot;:&quot;generic browser&quot;,&quot;platform&quot;:&quot;other&quot;,&quot;version&quot;:&quot;0&quot;},&quot;__analytics&quot;:{&quot;controllerActionName&quot;:&quot;index&quot;,&quot;controllerName&quot;:&quot;login&quot;,&quot;enabled&quot;:true},&quot;__remote_addr&quot;:&quot;122.182.195.3&quot;,&quot;__CPDATA&quot;:{&quot;domain_iframe&quot;:&quot;https://cdpn.io&quot;,&quot;host&quot;:&quot;codepen.io&quot;,&quot;iframe_allow&quot;:&quot;accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; microphone; midi; payment; vr&quot;,&quot;iframe_sandbox&quot;:&quot;allow-downloads allow-forms allow-modals allow-pointer-lock allow-popups allow-presentation allow-same-origin allow-scripts allow-top-navigation-by-user-activation&quot;},&quot;__env&quot;:&quot;production&quot;,&quot;__turnOffJS&quot;:false,&quot;__constants&quot;:{&quot;grid_iframe_sandbox_attributes&quot;:&quot;allow-scripts allow-pointer-lock allow-same-origin&quot;},&quot;__svg_sprite&quot;:&quot;/svg_sprite?v=bbd832a9&quot;,&quot;__stream_analytics&quot;:{&quot;api_key&quot;:&quot;64puhuch8n2j&quot;,&quot;token&quot;:&quot;eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJyZXNvdXJjZSI6ImFuYWx5dGljcyIsImFjdGlvbiI6IioiLCJ1c2VyX2lkIjoiKiJ9.K-TP9-k-_ZnktGVf_CxDVZyUXKzGMFVJ--dNJ-20_t4&quot;},&quot;__user&quot;:{&quot;anon&quot;:true,&quot;base_url&quot;:&quot;/anon/&quot;,&quot;current_team_id&quot;:0,&quot;current_team_hashid&quot;:&quot;YdEzGn&quot;,&quot;hashid&quot;:&quot;VoDkNZ&quot;,&quot;id&quot;:1,&quot;itemType&quot;:&quot;user&quot;,&quot;name&quot;:&quot;Captain Anonymous&quot;,&quot;owner_id&quot;:&quot;VoDkNZYdEzGn&quot;,&quot;paid&quot;:false,&quot;tier&quot;:0,&quot;username&quot;:&quot;anon&quot;,&quot;created_at&quot;:null,&quot;email_verified&quot;:null,&quot;collections_count&quot;:0,&quot;collections_private_count&quot;:0,&quot;followers_count&quot;:0,&quot;followings_count&quot;:0,&quot;pens_count&quot;:0,&quot;pens_private_count&quot;:0,&quot;projects_count&quot;:0,&quot;projects_private_count&quot;:0},&quot;__firebase&quot;:{&quot;config&quot;:{&quot;apiKey&quot;:&quot;AIzaSyBgLAe7N_MdFpuVofMkcQLGwwhUu5tuxls&quot;,&quot;authDomain&quot;:&quot;codepen-store-production.firebaseapp.com&quot;,&quot;databaseURL&quot;:&quot;https://codepen-store-production.firebaseio.com&quot;,&quot;disabled&quot;:false,&quot;projectId&quot;:&quot;codepen-store-production&quot;},&quot;token&quot;:&quot;eyJhbGciOiJSUzI1NiJ9.eyJhdWQiOiJodHRwczovL2lkZW50aXR5dG9vbGtpdC5nb29nbGVhcGlzLmNvbS9nb29nbGUuaWRlbnRpdHkuaWRlbnRpdHl0b29sa2l0LnYxLklkZW50aXR5VG9vbGtpdCIsImNsYWltcyI6eyJvd25lcklkIjoiVm9Ea05aWWRFekduIiwiYWRtaW4iOmZhbHNlfSwiZXhwIjoxNTk0MTIwMzczLCJpYXQiOjE1OTQxMTY3NzMsImlzcyI6ImZpcmViYXNlLWFkbWluc2RrLThva3lsQGNvZGVwZW4tc3RvcmUtcHJvZHVjdGlvbi5pYW0uZ3NlcnZpY2VhY2NvdW50LmNvbSIsInN1YiI6ImZpcmViYXNlLWFkbWluc2RrLThva3lsQGNvZGVwZW4tc3RvcmUtcHJvZHVjdGlvbi5pYW0uZ3NlcnZpY2VhY2NvdW50LmNvbSIsInVpZCI6IlZvRGtOWiJ9.eEBlaAzBLZKcDcwl-yka6IF8pk6-H_VN-KfeYRlYU6lgQIMqFxQaGCu8lx_xvvlTPA0YTqV3-TiIhrCSe8EU6_ZiZoc_s2aTf6EuYZcSH-a1etxDY2gCRfAVOfg0SItVKLpAdz_i5_F8xVwAZUfDvIpbMYyIgiQW3ux1iMRjC9oDtrhAVMCa8_OFK2bxBcY7CbjiC_xuFzyMdrqdi9fiEwi43IVdttE0DbHvJ6xtbccMhsjaoKcbVf-qn0YC4_XDYh1yEv4rGhmlMwfuZoUz4Jlcm2JAsx102ls7XmCzRaiFga78andJ1NSQJsqIN2uV8D6p0Iuur8cXDpPzw6bc6A&quot;},&quot;__graphql&quot;:{&quot;data&quot;:{&quot;sessionUser&quot;:{&quot;id&quot;:&quot;VoDkNZ&quot;,&quot;name&quot;:&quot;Captain Anonymous&quot;,&quot;avatar80&quot;:&quot;https://gravatar.com/avatar/b15e0cf27861794b6faa31065e8f9950?d=https%3A%2F%2Fassets.codepen.io%2Finternal%2Favatars%2Fusers%2Fdefault.png&amp;format=auto&amp;height=80&amp;version=0&amp;width=80&quot;,&quot;avatar512&quot;:&quot;https://gravatar.com/avatar/b15e0cf27861794b6faa31065e8f9950?d=https%3A%2F%2Fassets.codepen.io%2Finternal%2Favatars%2Fusers%2Fdefault.png&amp;format=auto&amp;height=512&amp;version=0&amp;width=512&quot;,&quot;canCreatePosts&quot;:false,&quot;currentContext&quot;:{&quot;id&quot;:&quot;VoDkNZ&quot;,&quot;baseUrl&quot;:&quot;/anon&quot;,&quot;title&quot;:&quot;Captain Anonymous&quot;,&quot;name&quot;:&quot;Captain Anonymous&quot;,&quot;avatar80&quot;:&quot;https://gravatar.com/avatar/b15e0cf27861794b6faa31065e8f9950?d=https%3A%2F%2Fassets.codepen.io%2Finternal%2Favatars%2Fusers%2Fdefault.png&amp;format=auto&amp;height=80&amp;version=0&amp;width=80&quot;,&quot;avatar512&quot;:&quot;https://gravatar.com/avatar/b15e0cf27861794b6faa31065e8f9950?d=https%3A%2F%2Fassets.codepen.io%2Finternal%2Favatars%2Fusers%2Fdefault.png&amp;format=auto&amp;height=512&amp;version=0&amp;width=512&quot;,&quot;username&quot;:&quot;anon&quot;,&quot;contextType&quot;:&quot;USER&quot;,&quot;projectLimitations&quot;:{&quot;projects&quot;:0,&quot;usedProjects&quot;:0,&quot;__typename&quot;:&quot;ProjectLimitations&quot;},&quot;privateByDefault&quot;:false,&quot;__typename&quot;:&quot;User&quot;},&quot;currentTeamId&quot;:null,&quot;baseUrl&quot;:&quot;/anon&quot;,&quot;username&quot;:&quot;anon&quot;,&quot;admin&quot;:false,&quot;anon&quot;:true,&quot;pro&quot;:false,&quot;verified&quot;:null,&quot;teams&quot;:[],&quot;permissions&quot;:{&quot;canCreatePrivate&quot;:false,&quot;canUploadAssets&quot;:false,&quot;__typename&quot;:&quot;UserPermissions&quot;},&quot;__typename&quot;:&quot;User&quot;}}},&quot;__pageType&quot;:&quot;login&quot;}">
+<script src="https://static.codepen.io/assets/common/everypage-a63f0cbd5f67116206c89108a0a1da6978ab1606d953812d875b800cf8fe823e.js"></script>
+<script src="https://static.codepen.io/assets/common/analytics_and_notifications-538ab2710674d4676fe331ffda620410176f9ac968498eeba639b3f0d1125ff8.js"></script>
+<script>
+LUX=(function(){var a=("undefined"!==typeof(LUX)&&"undefined"!==typeof(LUX.gaMarks)?LUX.gaMarks:[]);var d=("undefined"!==typeof(LUX)&&"undefined"!==typeof(LUX.gaMeasures)?LUX.gaMeasures:[]);var j="LUX_start";var k=window.performance;var l=("undefined"!==typeof(LUX)&&LUX.ns?LUX.ns:(Date.now?Date.now():+(new Date())));if(k&&k.timing&&k.timing.navigationStart){l=k.timing.navigationStart}function f(){if(k&&k.now){return k.now()}var o=Date.now?Date.now():+(new Date());return o-l}function b(n){if(k){if(k.mark){return k.mark(n)}else{if(k.webkitMark){return k.webkitMark(n)}}}a.push({name:n,entryType:"mark",startTime:f(),duration:0});return}function m(p,t,n){if("undefined"===typeof(t)&&h(j)){t=j}if(k){if(k.measure){if(t){if(n){return k.measure(p,t,n)}else{return k.measure(p,t)}}else{return k.measure(p)}}else{if(k.webkitMeasure){return k.webkitMeasure(p,t,n)}}}var r=0,o=f();if(t){var s=h(t);if(s){r=s.startTime}else{if(k&&k.timing&&k.timing[t]){r=k.timing[t]-k.timing.navigationStart}else{return}}}if(n){var q=h(n);if(q){o=q.startTime}else{if(k&&k.timing&&k.timing[n]){o=k.timing[n]-k.timing.navigationStart}else{return}}}d.push({name:p,entryType:"measure",startTime:r,duration:(o-r)});return}function h(n){return c(n,g())}function c(p,o){for(i=o.length-1;i>=0;i--){var n=o[i];if(p===n.name){return n}}return undefined}function g(){if(k){if(k.getEntriesByType){return k.getEntriesByType("mark")}else{if(k.webkitGetEntriesByType){return k.webkitGetEntriesByType("mark")}}}return a}return{mark:b,measure:m,gaMarks:a,gaMeasures:d}})();LUX.ns=(Date.now?Date.now():+(new Date()));LUX.ac=[];LUX.cmd=function(a){LUX.ac.push(a)};LUX.init=function(){LUX.cmd(["init"])};LUX.send=function(){LUX.cmd(["send"])};LUX.addData=function(a,b){LUX.cmd(["addData",a,b])};LUX_ae=[];window.addEventListener("error",function(a){LUX_ae.push(a)});LUX_al=[];if("function"===typeof(PerformanceObserver)&&"function"===typeof(PerformanceLongTaskTiming)){var LongTaskObserver=new PerformanceObserver(function(c){var b=c.getEntries();for(var a=0;a<b.length;a++){var d=b[a];LUX_al.push(d)}});try{LongTaskObserver.observe({type:["longtask"]})}catch(e){}};
+</script>
+<script src="https://cdn.speedcurve.com/js/lux.js?id=410041" async defer crossorigin="anonymous"></script>
+<script src="https://static.codepen.io/assets/packs/js/vendor-080a0f5c3693c84711ed.chunk.js"></script>
+<script src="https://static.codepen.io/assets/packs/js/2-6e4d8d2af269d433a716.chunk.js"></script>
+<script src="https://static.codepen.io/assets/packs/js/everypage-774f7bbfeaf0696f52d7.js"></script>
+<script src="https://static.codepen.io/assets/login/login-4407625f25e2e4173c21b7711219589474b1c1297f6f357bc56b7b27f171cbe2.js"></script>
+</body>
+</html>

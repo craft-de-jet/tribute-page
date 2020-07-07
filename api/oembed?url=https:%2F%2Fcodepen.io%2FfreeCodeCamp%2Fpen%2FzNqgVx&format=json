@@ -1,0 +1,16 @@
+{
+  "success": true,
+  "type": "rich",
+  "version": "1.0",
+  "provider_name": "CodePen",
+  "provider_url": "https://codepen.io",
+  "title": "FCC: Tribute Page",
+  "author_name": "freeCodeCamp.org",
+  "author_url": "https://codepen.io/freeCodeCamp/",
+  "height": "300",
+  "width": "800",
+  "thumbnail_width": "384",
+  "thumbnail_height": "225",
+  "thumbnail_url": "https://assets.codepen.io/260521/internal/screenshots/pens/zNqgVx.default.png?format=auto&amp;ha=false&amp;height=360&amp;quality=75&amp;v=1&amp;version=1558346350&amp;width=640",
+  "html": "<iframe id=\"cp_embed_zNqgVx\" src=\"https://codepen.io/freeCodeCamp/embed/preview/zNqgVx?height=300&amp;slug-hash=zNqgVx&amp;default-tabs=html,result&amp;host=https://codepen.io\" title=\"FCC: Tribute Page\" scrolling=\"no\" frameborder=\"0\" height=\"300\" allowtransparency=\"true\" class=\"cp_embed_iframe\" style=\"width: 100%; overflow: hidden;\"></iframe>"
+}
