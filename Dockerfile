@@ -1,6 +1,5 @@
-FROM node:9-slim
+FROM nginx
 ENV PORT 8080
 EXPOSE 8080
-WORKDIR /usr/src/app
-COPY . .
-CMD ["npm", "start"]
+WORKDIR /usr/share/nginx/html
+COPY . /usr/share/nginx/html/
